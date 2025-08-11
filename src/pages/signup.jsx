@@ -1,29 +1,26 @@
 import React from "react";
 import biznectlogo from'../Assets/biznectlogo.png'
 
-export default function Loginpage() {
+export default function SignUpPage() {
   return (
     <div style={styles.container}>
       <div style={styles.card}>
-        <center><img src={biznectlogo} alt="John Smith" style={{ width: '250px', height: '150px', borderRadius: '50%', marginBottom: '1px'}} /></center>
-        <p style={styles.subtitle}>Login to Your Account</p>
+                <center><img src={biznectlogo} alt="John Smith" style={{ width: '250px', height: '150px', borderRadius: '50%', marginBottom: '1px'}} /></center>
+        <p style={styles.subtitle}>Create Your Account</p>
 
         <form style={styles.form}>
+          <input type="text" placeholder="Full Name" style={styles.input} />
           <input type="email" placeholder="Email Address" style={styles.input} />
           <input type="password" placeholder="Password" style={styles.input} />
-
-         <a>
-           <a href="/home" style={styles.loginLink}></a>
-          <button style={styles.button}>
-            Login
-             </button>
-             </a>
+          <input type="password" placeholder="Confirm Password" style={styles.input} />
+          
+          <button style={styles.button}>Sign Up</button>
         </form>
 
         <p style={styles.loginText}>
-          Don't have an account?{" "}
-          <a href="/signup" style={styles.loginLink}>
-            Sign Up
+          Already have an account?{" "}
+          <a href="/login" style={styles.loginLink}>
+            Login
           </a>
         </p>
       </div>
@@ -74,6 +71,7 @@ const styles = {
     backgroundColor: "#222",
     color: "#fff",
     fontSize: "14px",
+    transition: "0.3s",
   },
   button: {
     padding: "12px",
@@ -84,6 +82,7 @@ const styles = {
     border: "none",
     cursor: "pointer",
     fontSize: "16px",
+    transition: "0.3s",
   },
   loginText: {
     marginTop: "20px",
