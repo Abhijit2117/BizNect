@@ -13,10 +13,11 @@ export default function Loginpage() {
           <input type="password" placeholder="Password" style={styles.input} />
 
          <a>
-           <a href="/home" style={styles.loginLink}></a>
+           <a href="home" style={styles.loginLink}>
           <button style={styles.button}>
             Login
              </button>
+             </a>
              </a>
         </form>
 
