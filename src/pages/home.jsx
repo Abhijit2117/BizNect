@@ -5,6 +5,7 @@ import jessica from '../Assets/jessica.png'
 import sarah from '../Assets/sarah.png'
 import biznectlogo from'../Assets/biznectlogo.png'
 import keyoo from'../Assets/keyoo.png'
+import Homefamily from'../Assets/Homefamily.jpeg'
 function Home() {
 //   return (
     
@@ -269,31 +270,39 @@ function Home() {
         <p style={{ fontSize: "1.2rem", maxWidth: "600px", margin: "0 auto", color: "#ddd" }}>
           Connecting Businesses with the Right Services — Social Media Handling, Digital Solutions.
         </p>
+        <a href="signup">
         <button style={{ marginTop: "30px", padding: "15px 30px", fontSize: "1rem", fontWeight: "bold", backgroundColor: "#FFD700", border: "none", borderRadius: "30px", cursor: "pointer" }}>
           Get Started
         </button>
+        </a>
       </section>
 
       {/* Services */}
-      <section
+      <section 
   id="services"
   style={{
-    padding: "60px 20px",
+    padding: "450px 40px",
     textAlign: "center",
-    backgroundColor: "#000",
-  }}
->
-  <h2
+   backgroundImage: `url(${Homefamily})`,
+   backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    marginBottom:"-250px"
+        
+   
+   
+  }}>
+  {/* <h2
     style={{
       fontSize: "2.5rem",
       color: "#FFD700",
-      marginBottom: "40px",
+      marginBottom: "1px",
+      marginTop:"-300px"
     }}
   >
     Our Services
-  </h2>
+  </h2> */}
 
-  <div
+  {/* <div
     style={{
       display: "flex",
       flexWrap: "wrap",
@@ -302,7 +311,7 @@ function Home() {
     }}
   >
     {/* Service 1 */}
-    <div
+    {/* <div
       style={{
         backgroundColor: "#111",
         padding: "20px",
@@ -326,11 +335,11 @@ function Home() {
       <p style={{ color: "#ccc" }}>
         Boost your online presence with professional management.
       </p>
-    </div>
+    </div> */}
 
    
     {/* Service 2 */}
-    <div
+    {/* <div
       style={{
         backgroundColor: "#111",
         padding: "20px",
@@ -358,8 +367,8 @@ function Home() {
       <p style={{ color: "#ccc" }}>
         Connecting property owners with the right clients.
       </p>
-    </div>
-  </div>
+    </div> 
+  </div>*/}
 </section>
 
 

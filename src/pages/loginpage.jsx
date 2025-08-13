@@ -3,7 +3,7 @@ import biznectlogo from'../Assets/biznectlogo.png'
 
 export default function Loginpage() {
   return (
-    <div style={styles.container}>
+    <div style={styles.container} >
       <div style={styles.card}>
         <center><img src={biznectlogo} alt="John Smith" style={{ width: '250px', height: '150px', borderRadius: '50%', marginBottom: '1px'}} /></center>
         <p style={styles.subtitle}>Login to Your Account</p>
