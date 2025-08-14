@@ -264,7 +264,7 @@ function Home() {
         </nav>
       </header>
 
-      {/* Hero Section */}
+      {/* Welcome Section */}
       <section style={{ textAlign: "center", padding: "80px 20px", background: "linear-gradient(135deg, #000, #222)" }}>
         <h1 style={{ fontSize: "3rem", color: "#FFD700", marginBottom: "20px" }}>Welcome to BizNect</h1>
         <p style={{ fontSize: "1.2rem", maxWidth: "600px", margin: "0 auto", color: "#ddd" }}>
@@ -280,17 +280,49 @@ function Home() {
       {/* Services */}
       <section 
   id="services"
-  style={{
-    padding: "450px 40px",
-    textAlign: "center",
-   backgroundImage: `url(${Homefamily})`,
-   backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    marginBottom:"-250px"
-        
-   
-   
-  }}>
+   style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+        padding: "50px 40px",
+        backgroundColor: "#000", // black bg like example
+        color: "#fff",
+      }}>
+        <div style={{ flex: 1, paddingRight: "20px",  marginTop:"-50px"}}>
+        <h2 style={{ color: "#FFD700", fontSize:"15px" }}> A COMPANY CAN YOU TRUST</h2>
+        <h1 style={{ fontSize:"25px"}}>About <span style={{color: "#FFD700", fontSize:"25px"}}>BizNect</span></h1>
+        <p>
+          At BizNect, we connect business owners with trusted service providers across industries. Whether it's Social Media Handling, Digital Services, or Real Estate Solutions, our platform ensures professional, transparent, and efficient collaborations. We are committed to creating a smooth, secure, and result-driven environment where every deal is built on trust and mutual growth.
+        </p>
+
+        <div style={{
+          backgroundColor: "#1a1a1a",
+          padding: "15px",
+          borderRadius: "8px",
+          marginTop: "20px"
+        }}>
+          <h3 style={{ color: "#FFD700" }}>Professional & Easy-to-Use Platform</h3>
+          <p>BizNect offers an intuitive and well-organized interface, making it easy for businesses and clients to connect, communicate, and collaborate — anytime, anywhere.</p>
+        </div>
+
+        <div style={{
+          backgroundColor: "#1a1a1a",
+          padding: "15px",
+          borderRadius: "8px",
+          marginTop: "20px"
+        }}>
+          <h3 style={{ color: "#FFD700" }}>Fast & Secure Transactions</h3>
+          <p>We prioritize quick and secure payment processing, ensuring your projects move forward without unnecessary delays.</p>
+        </div>
+      </div>
+
+     <div style={{ flex: 1, display: "flex", justifyContent: "center" }}>
+        <img
+          src={Homefamily}
+          alt="Family"
+          style={{ maxWidth: "100%", height: "auto", borderRadius: "10px"}}
+        />
+      </div>
   {/* <h2
     style={{
       fontSize: "2.5rem",
@@ -371,11 +403,42 @@ function Home() {
   </div>*/}
 </section>
 
+<section id="team" style={{ padding: "60px 20px", backgroundColor: "#111", textAlign: "center" }}>
+        <h2 style={{ fontSize: "2.5rem", color: "#FFD700", marginBottom: "40px" }}>Our Services</h2>
+         {/* Service 1 */}
+      <div
+      style={{
+        backgroundColor: "#111",
+        padding: "20px",
+        borderRadius: "15px",
+        width: "300px",
+        textAlign: "center",
+        boxShadow: "0 0 10px rgba(255,215,0,0.5)",
+      }}
+    >
+      <img
+        src={keyoo}
+        alt="Social Media"
+        style={{
+          width: '550px',
+          height:'300px',
+          borderRadius: "10px",
+          marginBottom: "20px",
+        }}
+      />
+      <h3 style={{ color: "#FFD700", marginBottom: "10px" }}>Social Media</h3>
+      <p style={{ color: "#ccc" }}>
+        Boost your online presence with professional management.
+      </p>
+    </div>
+        
+      </section>
+
 
       {/* Team Section */}
-      <section id="team" style={{ padding: "60px 20px", backgroundColor: "#111", textAlign: "center" }}>
+      <section id="team" style={{ padding: "60px 20px", backgroundColor: "black", textAlign: "center" }}>
         <h2 style={{ fontSize: "2.5rem", color: "#FFD700", marginBottom: "40px" }}>Meet Our Team</h2>
-        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "20px" }}>
+        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "20px"}}>
           {[
             { name: "John Smith", role: "CEO", img: "https://via.placeholder.com/200" },
             { name: "Jessica Brown", role: "Marketing Head", img: "https://via.placeholder.com/200" },
